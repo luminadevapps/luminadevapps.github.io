@@ -1,53 +1,54 @@
-# Lumina Dev Apps
+<div align="center">
 
-**iOS, macOS & desktop app development studio based in Oshawa, Ontario, Canada.**
-Build · Innovate · Illuminate
+# 🌐 luminadevapps.com
 
-I'm **Navaratnam Manoranjan**, Founder & Developer at [Lumina Dev Apps](https://luminadevapps.com) — a software studio shipping production-grade native apps for the App Store. I build with Swift, SwiftUI, SwiftData, and native Apple frameworks, plus Python tooling.
+**Source for the official Lumina Dev Apps website.**
 
-🌐 Website: **[luminadevapps.com](https://luminadevapps.com)**
-🍎 App Store: **[Lumina Dev Apps developer page](https://apps.apple.com/developer/PLV8ZGP769)**
-📍 Oshawa, Ontario, Canada
-✉️ admin@luminadevapps.com
+[![Live site](https://img.shields.io/badge/live-luminadevapps.com-1575F9)](https://luminadevapps.com)
+[![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?logo=github)](https://pages.github.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 
----
+Made by [**Lumina Dev Apps**](https://luminadevapps.com) · Oshawa, Ontario, Canada
 
-## 🚀 Featured Apps
-
-Native iOS and macOS apps published on the App Store:
-
-| App | Platform | Category | What it does |
-|-----|----------|----------|--------------|
-| **SwiftRegister** | macOS | Point of Sale | Universal POS — 44 business types, 57 countries, 15 payment methods, barcode scanning, invoicing |
-| **EasyInventory** | iOS | Inventory | Barcode + Bluetooth LE + voice inventory management for retail, backed by SwiftData |
-| **ProInvoice** | macOS | Business | Native invoice & estimate generator with Ontario HST, PDF/JSON export, custom branding |
-| **NurseToolkit** | iOS | Medical | 15 clinical screens — drug calculators, IV drip rates, lab values, AI care notes (NCBI/NIH/WHO cited) |
-| **DoctorToolkit** | iOS | Medical | SOAP note builder, drug interaction checker, clinical calculators, AI differential diagnosis |
-| **PharmDeck** | iOS | Education | 500-card pharmacy study app with SM-2 spaced repetition and cited drug-class content |
-| **HealthDeck** | iOS | Education | Flashcard & quiz study tool for health science students with spaced repetition |
-| **MathSolverAI** | iOS | Education | Photo-to-solution AI math tutor powered by Anthropic Claude |
-| **PhotoAlbumPro** | macOS | Photo & Video | Premium album maker — 1,000 ceremony templates, layered PSD & print-ready PDF export |
-| **PosterMakerPro** | macOS | Graphics & Design | Multilingual poster designer — 3,400+ templates across 34 languages |
-| **PriceTag** | macOS | Retail | Bulk price-label generator with 20 templates and print-ready PDF export |
-| **PhotoCalendar** | macOS | Lifestyle | Personal photo calendar builder with collage layouts and high-res export |
-
-Plus language and reference apps: **EnglishTamil**, **EnglishTamilStudy**, **EnglishDeutsch**, **KidLearn**, **Explore Canada**, **WorldMapApp**, **PlantHaven**, and more — 20+ apps shipped.
-
-## 🛠️ Open-Source & Developer Tools
-
-- **SYSM** — macOS system maintenance utility
-- **KernelInspector** — open a `.kext` bundle or any Mach-O binary and inspect it
-
-## 🧰 Tech Stack
-
-`Swift` · `SwiftUI` · `SwiftData` · `AVFoundation` · `MapKit` · `Core Data` · `Python`
-
-## 📫 Get in Touch
-
-- Website — [luminadevapps.com](https://luminadevapps.com)
-- Email — admin@luminadevapps.com / support@luminadevapps.com
-- App Store — [Lumina Dev Apps](https://apps.apple.com/developer/PLV8ZGP769)
+</div>
 
 ---
 
-<sub>© Lumina Dev Apps — Direct Parcel Distributors Inc. · Oshawa, Ontario, Canada</sub>
+## About
+
+This repository hosts the source for **[luminadevapps.com](https://luminadevapps.com)** — the official site of **Lumina Dev Apps**, an iOS, macOS & desktop app development studio in Oshawa, Ontario, Canada. It's a static site deployed with **GitHub Pages** and a custom domain (see `CNAME`).
+
+Lumina Dev Apps designs and ships polished native software for businesses worldwide — point-of-sale systems, inventory, invoicing, medical and education tools, and localized apps — used across **57 countries** and **44 business types**.
+
+## 🗂️ Structure
+
+| Path | Purpose |
+|------|---------|
+| `index.html` | Homepage — studio overview, featured apps, contact |
+| `privacy-policy/` | Privacy policy |
+| `delete-account.html` | Account deletion page (App Store requirement) |
+| `sitemap.xml` | Sitemap for search engines |
+| `robots.txt` | Crawler directives |
+| `CNAME` | Custom domain mapping (`luminadevapps.com`) |
+| `favicon.svg` / `logo.png` / `og-image.png` | Brand & social-share assets |
+
+## 🚀 Local preview
+
+Because it's a static site, you can preview it with any local server:
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
+
+## 🌍 Deployment
+
+Pushes to the default branch are published automatically via **GitHub Pages**. The live site is served at **https://luminadevapps.com**.
+
+## 💬 Contact
+
+- 🌐 [luminadevapps.com](https://luminadevapps.com)
+- ✉️ admin@luminadevapps.com · support@luminadevapps.com
+- 📍 Oshawa, Ontario, Canada
+
+© 2026 Lumina Dev Apps — a division of Direct Parcel Distributors Inc.
