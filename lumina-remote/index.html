@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumina Remote — Download the free host</title>
+<style>
+  :root{ --navy:#120D26; --navy2:#1C1540; --teal:#00D1BF; --purple:#784FDC; --ink:#ECEAF6; --muted:#9a97b5; --line:rgba(120,79,220,.22); --card:#171329; }
+  *{ margin:0; box-sizing:border-box; }
+  body{ font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; background:var(--navy); color:var(--ink); line-height:1.6; }
+  .wrap{ max-width:820px; margin:0 auto; padding:0 22px; }
+  header{ background:linear-gradient(150deg,var(--navy),#241a52 70%,#2e2068); padding:56px 22px 46px; text-align:center; }
+  .logo{ width:72px;height:72px;border-radius:18px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;
+         background:linear-gradient(135deg,#15243f,#201747);border:2px solid var(--teal); }
+  .logo svg{ width:40px;height:40px; }
+  h1{ font-size:30px; letter-spacing:-.02em; }
+  .kick{ color:var(--teal); font-size:12px; font-weight:700; letter-spacing:3px; text-transform:uppercase; }
+  header p{ color:#c9c6e8; margin-top:8px; font-size:15px; }
+  main{ padding:34px 0 60px; }
+  .lead{ color:var(--muted); font-size:15px; text-align:center; max-width:640px; margin:0 auto 28px; }
+  .cards{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media(max-width:640px){ .cards{ grid-template-columns:1fr; } }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .card h2{ font-size:18px; display:flex; align-items:center; gap:10px; }
+  .card h2 .ic{ color:var(--teal); }
+  .req{ color:var(--muted); font-size:13px; margin:4px 0 16px; }
+  .dl{ display:block; text-align:center; text-decoration:none; font-weight:700; font-size:15px;
+       padding:12px 16px; border-radius:11px; background:linear-gradient(135deg,var(--purple),#5a4fcf); color:#fff; }
+  .dl.teal{ background:linear-gradient(135deg,#00b3a4,var(--teal)); color:#04231f; }
+  .note{ color:var(--muted); font-size:12px; margin-top:10px; }
+  h3{ font-size:16px; margin:34px 0 10px; color:#fff; border-bottom:1px solid var(--line); padding-bottom:7px; }
+  ol{ padding-left:20px; } li{ margin:7px 0; font-size:14.5px; }
+  .foot{ text-align:center; color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:18px; }
+  a.link{ color:var(--teal); }
+  code{ background:#0e0b1c; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:13px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="22" y="26" width="56" height="34" rx="6" stroke="#00D1BF" stroke-width="6" fill="#15243f"/>
+        <rect x="46" y="60" width="8" height="10" fill="#00D1BF"/><rect x="36" y="70" width="28" height="6" rx="3" fill="#00D1BF"/>
+        <line x1="50" y1="32" x2="50" y2="48" stroke="#fff" stroke-width="6"/>
+        <path d="M40 44 L50 56 L60 44 Z" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="kick">Lumina Remote</div>
+    <h1>Download the free host</h1>
+    <p>Install this on the computer you want to control, then connect from the Lumina Remote app on your iPhone or iPad.</p>
+  </header>
+
+  <main class="wrap">
+    <p class="lead">The host runs quietly in the background — the menu bar on Mac, the system tray on Windows — and lets the Lumina Remote app stream your screen and control it. It's free, and your screen stream stays encrypted between your own devices.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h2><span class="ic">◉</span> macOS</h2>
+        <div class="req">macOS 13 Ventura or later · Apple Silicon &amp; Intel · notarized</div>
+        <a class="dl teal" href="downloads/LuminaRemoteHost-mac.dmg">Download for Mac</a>
+        <div class="note">Open the app, grant Screen Recording &amp; Accessibility when asked, then click Start.</div>
+      </div>
+      <div class="card">
+        <h2><span class="ic">◉</span> Windows</h2>
+        <div class="req">Windows 10 or 11 (64-bit)</div>
+        <a class="dl" href="downloads/LuminaRemoteHost-win64.zip">Download for Windows (.exe)</a>
+        <div class="note">Unzip, run <code>LuminaRemoteHost.exe</code>. If SmartScreen appears, choose “More info → Run anyway.”</div>
+      </div>
+    </div>
+
+    <h3>How to connect</h3>
+    <ol>
+      <li>Install and open the host on your Mac or Windows PC — it starts advertising on your network.</li>
+      <li>On your iPhone/iPad, open <strong>Lumina Remote</strong> and tap <strong>Add device (scan QR)</strong>.</li>
+      <li>Scan the pairing code the host shows (Mac: menu bar → Pair a device · Windows: tray → Show pairing code).</li>
+      <li>Tap the computer to connect. You'll see its screen live and can control it with touch and keyboard.</li>
+    </ol>
+
+    <h3>Away from home?</h3>
+    <ol>
+      <li>Install <a class="link" href="https://tailscale.com/download">Tailscale</a> on the iPhone and the computer, signed in to the same account (free for personal use).</li>
+      <li>In Lumina Remote, use <strong>Connect by IP</strong> with the computer's Tailscale address (the <code>100.x.y.z</code> one).</li>
+    </ol>
+
+    <div class="foot">
+      Lumina Remote is a product of Lumina Dev Apps · Direct Parcel Distributors Inc.<br>
+      Questions? <a class="link" href="mailto:support@luminadevapps.com">support@luminadevapps.com</a> · © 2026
+    </div>
+  </main>
+</body>
+</html>
