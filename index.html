@@ -97,8 +97,8 @@ nav .container{display:flex;align-items:center;justify-content:space-between}
 .app-card:hover::before{opacity:1}
 .app-icon{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:20px;position:relative}
 .app-card h3{font-size:1.25rem;font-weight:600;margin-bottom:8px;letter-spacing:-.02em}
-.app-card .platforms{display:flex;gap:8px;margin-bottom:12px}
-.platform-badge{font-size:.7rem;padding:4px 11px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04));border:1px solid rgba(255,255,255,0.18);color:#ffffff;font-weight:500;backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.22),0 4px 14px rgba(0,0,0,0.35)}
+.app-card .platforms{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.platform-badge{white-space:nowrap;font-size:.7rem;padding:4px 11px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04));border:1px solid rgba(255,255,255,0.18);color:#ffffff;font-weight:500;backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.22),0 4px 14px rgba(0,0,0,0.35)}
 .app-card p{color:var(--text2);font-size:.9rem;line-height:1.7;margin-bottom:16px}
 .app-features{display:flex;flex-wrap:wrap;gap:6px}
 .app-features span{font-size:.72rem;padding:4px 10px;border-radius:6px;background:var(--bg);color:var(--text3);border:1px solid rgba(255,255,255,0.04)}
@@ -258,7 +258,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
     <div class="apps-grid">
         <!-- ChromaCut -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/chromacut.png?v=1794838997833" alt="ChromaCut" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/chromacut.png?v=1794842369380" alt="ChromaCut" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>ChromaCut</h3>
             <div class="platforms"><span class="platform-badge">Android</span><span class="platform-badge">Photo & Video</span></div>
             <p>Remove green screen, blue screen and plain photo backgrounds on your phone. Cut out the subject, refine the edge, drop in a new background, and export a PNG or a layered PSD. Photos are processed on your device and never uploaded.</p>
@@ -267,7 +267,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Scan to TV -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/scan-to-tv.png?v=1794838997833" alt="Scan to TV" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/scan-to-tv.png?v=1794842369380" alt="Scan to TV" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Scan to TV</h3>
             <div class="platforms"><span class="platform-badge">Android</span><span class="platform-badge">Utilities</span></div>
             <p>Scan a QR code, type a link or search the web on your phone and see the page full-screen on your TV. With screen mirroring on, the TV shows the wide page layout and follows along as you tap, scroll and type.</p>
@@ -276,7 +276,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Lumina Remote -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-remote.png?v=1794838997833" alt="Lumina Remote" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-remote.png?v=1794842369380" alt="Lumina Remote" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Lumina Remote</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">iPadOS</span><span class="platform-badge">Productivity</span></div>
             <p>Turn your iPhone into a full remote control for your Mac and Windows PC. Stream your computer's screen in real time and control it with your fingertips — move the pointer, click, type, and run anything, on your network or from anywhere. Encrypted end to end; pair once and connect.</p>
@@ -285,7 +285,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- StudioLight -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/studiolight.png?v=1794838997833" alt="StudioLight" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/studiolight.png?v=1794842369380" alt="StudioLight" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>StudioLight</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Photo & Video</span></div>
             <p>Professional photo editing with no subscription. Full adjustment suite — white balance, exposure, contrast, highlights, shadows — plus 40 pro presets, one-tap auto-correct, batch editing, and cinematic slideshows with 144 transitions. Everything runs on-device.</p>
@@ -294,7 +294,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- CashGuard -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/cashguard.png?v=1794838997833" alt="CashGuard" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/cashguard.png?v=1794842369380" alt="CashGuard" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>CashGuard</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Utilities</span></div>
             <p>Identify banknotes from 38 global currencies with your camera, then walk through the security features — watermarks, threads, and holograms — step by step. All processing stays on device; nothing is stored or uploaded.</p>
@@ -303,7 +303,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- MediaCast Player -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacast-player.png?v=1794838997833" alt="MediaCast Player" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacast-player.png?v=1794842369380" alt="MediaCast Player" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>MediaCast Player</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">Photo & Video</span></div>
             <p>Cast photos, videos, and music from your Mac to Apple TV and other Apple devices over Wi-Fi — no cables, no fees. Scheduled playback, CloudKit sync, and video conversion built in.</p>
@@ -312,7 +312,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- MediaCast -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacast.png?v=1794838997833" alt="MediaCast" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacast.png?v=1794842369380" alt="MediaCast" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>MediaCast</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Photo & Video</span></div>
             <p>Cast photos and videos from your iPhone or iPad to Apple TV over local Wi-Fi. Build playlists, sync playback across devices, and schedule slideshows.</p>
@@ -321,7 +321,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- MediaCastTV -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacasttv.png?v=1794838997833" alt="MediaCastTV" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mediacasttv.png?v=1794842369380" alt="MediaCastTV" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>MediaCastTV</h3>
             <div class="platforms"><span class="platform-badge">tvOS</span><span class="platform-badge">Photo & Video</span></div>
             <p>Bring your media to Apple TV. Receive and play streamed video, photos, and audio on the big screen, with a remote-friendly interface built for tvOS.</p>
@@ -330,7 +330,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Lingura -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lingura.png?v=1794838997833" alt="Lingura" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lingura.png?v=1794842369380" alt="Lingura" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Lingura</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Social Networking</span></div>
             <p>Real-time messaging with voice and video calls and built-in translation. Connect across languages with on-device transliteration. Built with SwiftUI, Firebase, and WebRTC.</p>
@@ -339,7 +339,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- SwiftRegister -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/swiftregister.png?v=1794838997833" alt="SwiftRegister" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/swiftregister.png?v=1794842369380" alt="SwiftRegister" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>SwiftRegister</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Universal POS</span></div>
             <p>Turn any Apple device into a complete point-of-sale system — no recurring fees. Barcode checkout, Apple Pay and PayPal, CRA-compliant receipts, inventory, CRM, and invoicing.</p>
@@ -348,7 +348,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- EasyInventory -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/easyinventory.png?v=1794838997833" alt="EasyInventory" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/easyinventory.png?v=1794842369380" alt="EasyInventory" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>EasyInventory</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Inventory</span></div>
             <p>Professional inventory management for liquor stores, convenience stores, and retail. Triple barcode scanning (camera, Bluetooth LE, voice), 292-product database, and SwiftData persistence.</p>
@@ -357,7 +357,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Explore Canada -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/explore-canada.png?v=1794838997833" alt="Explore Canada" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/explore-canada.png?v=1794842369380" alt="Explore Canada" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Explore Canada</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Travel Guide</span></div>
             <p>Complete travel guide with MapKit, 152 tourist attractions, 86 government offices, road trip planner, and Canada trivia quiz. Discover the beauty of Canada.</p>
@@ -366,7 +366,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Lumina Languages -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-languages.png?v=1794838997833" alt="Lumina Languages" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-languages.png?v=1794842369380" alt="Lumina Languages" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Lumina Languages</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">iPadOS</span><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Education</span></div>
             <p>Learn 19 languages with 8,000 real-life phrases and 8,000 words for 80 jobs and everyday situations. Hear every phrase at normal or slow speed, read pronunciation guides for non-Latin scripts, and practise with smart review, flashcards and quizzes. Replaces our separate English language apps with one app for Tamil, Sinhala, Malayalam, Hindi, Arabic, Spanish, French, German and more.</p>
@@ -375,7 +375,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- KidLearn -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/kidlearn.png?v=1794838997833" alt="KidLearn – Language Learning" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/kidlearn.png?v=1794842369380" alt="KidLearn – Language Learning" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>KidLearn – Language Learning</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Education</span></div>
             <p>Learn Words by Category. Fun educational app for children with interactive lessons, colorful interfaces, and category-based vocabulary building.</p>
@@ -384,7 +384,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PlantHaven -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/planthaven.png?v=1794838997833" alt="PlantHaven" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/planthaven.png?v=1794842369380" alt="PlantHaven" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PlantHaven</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Lifestyle</span></div>
             <p>Plant care and identification app. Track your indoor garden, get watering reminders, and identify plants with comprehensive care guides.</p>
@@ -393,7 +393,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- WorldMapApp -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/worldmapapp.png?v=1794838997833" alt="WorldMapApp" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/worldmapapp.png?v=1794842369380" alt="WorldMapApp" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>WorldMapApp</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Reference</span></div>
             <p>Interactive world map reference app. Explore countries, capitals, flags, populations, and geography facts with a beautiful map interface.</p>
@@ -402,7 +402,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- HealthDeck -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/healthdeck.png?v=1794838997833" alt="HealthDeck" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/healthdeck.png?v=1794842369380" alt="HealthDeck" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>HealthDeck</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Education</span></div>
             <p>Flashcard and quiz study tool for health science students. Interactive study modes, spaced repetition, and comprehensive medical content with citations.</p>
@@ -411,7 +411,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- ProInvoice -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/proinvoice.png?v=1794838997833" alt="ProInvoice" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/proinvoice.png?v=1794842369380" alt="ProInvoice" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>ProInvoice</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Finance</span></div>
             <p>Full-featured macOS invoicing app built with SwiftUI and SwiftData. Supports 198 countries with local tax and currency, live FX rates, PDF generation, recurring invoices, and multi-language support.</p>
@@ -420,7 +420,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PharmDeck -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/pharmdeck.png?v=1794838997833" alt="PharmDeck" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/pharmdeck.png?v=1794842369380" alt="PharmDeck" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PharmDeck</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Education</span></div>
             <p>Pharmacy study app with 500 expert-curated flashcards and SM-2 spaced repetition algorithm. Built for pharmacy students preparing for licensing exams.</p>
@@ -429,7 +429,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- NurseToolkit -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/nursetoolkit.png?v=1794838997833" alt="NurseToolkit" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/nursetoolkit.png?v=1794842369380" alt="NurseToolkit" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>NurseToolkit</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Medical</span></div>
             <p>Clinical toolkit for nurses with medical calculators, drug references, care planning tools, and Anthropic Claude-powered clinical decision support. Backed by 30+ peer-reviewed medical citations for evidence-based practice.</p>
@@ -438,7 +438,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- DoctorToolkit -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/doctortoolkit.png?v=1794838997833" alt="DoctorToolkit" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/doctortoolkit.png?v=1794842369380" alt="DoctorToolkit" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>DoctorToolkit</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Medical</span></div>
             <p>AI-powered clinical tools for doctors. SOAP note builder, drug interaction checker, medical calculators, and Anthropic Claude-powered differential diagnosis assistant — all in one app.</p>
@@ -447,7 +447,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- MathSolverAI -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mathsolverai.png?v=1794838997833" alt="MathSolverAI" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/mathsolverai.png?v=1794842369380" alt="MathSolverAI" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>MathSolverAI</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Education</span></div>
             <p>AI-powered math tutor. Snap a photo of a problem and get clear step-by-step explanations powered by Anthropic Claude. Algebra, calculus, geometry, statistics, and more.</p>
@@ -456,7 +456,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PhotoAlbumPro -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/photoalbumpro.png?v=1794838997833" alt="PhotoAlbum Pro" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/photoalbumpro.png?v=1794842369380" alt="PhotoAlbum Pro" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PhotoAlbum Pro</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Photo & Video</span></div>
             <p>The premium photo album maker for Mac. 1,000 ceremony templates across weddings, baptisms, baby showers, graduations, and more. Export print-ready PDF, PNG, JPEG, and layered PSD with Unicode layer names.</p>
@@ -465,7 +465,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- TamilChat -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/tamilchat.png?v=1794838997833" alt="TamilChat" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/tamilchat.png?v=1794842369380" alt="TamilChat" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>TamilChat</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Social Networking</span></div>
             <p>WhatsApp-style messaging built for Tamil speakers. Real-time chat, voice & video calls, Tamil phonetic transliteration, and on-device translation. Built with SwiftUI, Firebase, and WebRTC.</p>
@@ -474,7 +474,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PosterMakerPro -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/postermakerpro.png?v=1794838997833" alt="PosterMakerPro" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/postermakerpro.png?v=1794842369380" alt="PosterMakerPro" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PosterMakerPro</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Graphics & Design</span></div>
             <p>Design stunning posters in seconds — 120+ templates, 35 languages, your own logo, and PNG, JPEG, PDF & layered PSD export. Text Styler, Poster Maker, and a 110-design gallery in one app.</p>
@@ -483,7 +483,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PhotoCalendar -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/photocalendar.png?v=1794838997833" alt="PhotoCalendar" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/photocalendar.png?v=1794842369380" alt="PhotoCalendar" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PhotoCalendar</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Lifestyle</span></div>
             <p>Personal photo calendar for Mac. Build beautiful month-by-month calendars from your own photos with 10 multi-photo collage layouts and high-resolution print-ready export.</p>
@@ -492,7 +492,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- PriceTag -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/pricetag.png?v=1794838997833" alt="PriceTag" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/pricetag.png?v=1794842369380" alt="PriceTag" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>PriceTag</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Retail</span></div>
             <p>Bulk price label generator for retailers. Design tags from 20 built-in templates, batch-generate labels from product lists, and export print-ready PDFs. Built with SwiftUI and SwiftData.</p>
@@ -501,7 +501,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- CardVault -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/cardvault.png?v=1794838997833" alt="CardVault" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/cardvault.png?v=1794842369380" alt="CardVault" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>CardVault</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">iPadOS</span><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Finance</span></div>
             <p>Keep your cards where only you can reach them. Scan a card with the camera and CardVault reads it on-device, then locks it behind Face ID. Nothing is uploaded, nothing is tracked, and the app makes no network requests at all — your cards never leave your iPhone. Optional encrypted backup lets you move your vault between devices with a passphrase only you know.</p>
@@ -510,7 +510,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Lumina Sensors -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-sensors.png?v=1794838997833" alt="Lumina Sensors" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/lumina-sensors.png?v=1794842369380" alt="Lumina Sensors" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Lumina Sensors</h3>
             <div class="platforms"><span class="platform-badge">macOS</span><span class="platform-badge">iOS</span><span class="platform-badge">visionOS</span><span class="platform-badge">Utilities</span></div>
             <p>Real-time system monitoring for iPhone, Mac, and Apple Vision. Reads the system's four-level thermal state — Nominal, Fair, Serious, Critical — alongside live CPU load, memory usage, battery, storage, and device specs including core count, system version, and uptime. It reports only what documented Apple APIs actually return: no invented numbers, no unverifiable CPU temperatures.</p>
@@ -519,7 +519,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- Angadi -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/angadi.png?v=1794838997833" alt="Angadi" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/angadi.png?v=1794842369380" alt="Angadi" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>Angadi</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">Lifestyle</span></div>
             <p>A directory of Tamil-owned shops, services and community businesses, in Tamil and English. Browse by place, category or map for free — no account needed. Business owners sign in to post their own listing, and every listing is reviewed before it goes live.</p>
@@ -528,7 +528,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
         </div>
         <!-- CitizenPrep -->
         <div class="app-card fade-up delay-1">
-            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/citizenprep.png?v=1794838997833" alt="CitizenPrep" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+            <div class="app-icon" style="padding:0;overflow:hidden"><img src="icons/citizenprep.png?v=1794842369380" alt="CitizenPrep" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
             <h3>CitizenPrep</h3>
             <div class="platforms"><span class="platform-badge">iOS</span><span class="platform-badge">macOS</span><span class="platform-badge">Android</span><span class="platform-badge">Education</span></div>
             <p>A daily study plan for the Canadian citizenship test. Set your test date and CitizenPrep spreads every question over the days you have left, with timed mock tests, a readiness score, a province and territory module, and explanations in 30 languages.</p>
@@ -730,6 +730,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--border)}
             <a href="https://luminadevapps.com">luminadevapps.com</a>
             <a href="https://github.com/luminadevapps" target="_blank" rel="noopener">GitHub</a>
             <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/bizpages/terms/">Angadi Terms</a>
         </div>
     </div>
     <div class="footer-bottom">
